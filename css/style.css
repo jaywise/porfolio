@@ -1,0 +1,383 @@
+/*!
+ * Start Bootstrap - The Big Picture HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700|Raleway:400,700);
+body {
+    background: none;
+    font-family: 'Oxygen', sans-serif;
+    color: #7b8f95;
+}
+
+p {
+    font-size: 24px;
+}
+
+#code-sig {
+    color: pink;
+    margin-top: 7px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+/* use for poster image later
+
+.full {
+  background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(images/fiber-tip-vid.png) no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(20%) opacity(30%);
+    -moz-filter:grayscale(20%) opacity(30%);
+    filter: grayscale(20%) opacity(30%);
+}
+
+video {
+    display: block;
+}
+
+
+#grad1 {
+    margin-top: 5px;
+    height: 90px;
+    background: grey; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, grey, #baba17, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, grey,#baba17, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, grey, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, grey, white); /* Standard syntax (must be last) */
+    -webkit-box-shadow: -55px 32px 47px -35px rgba(0,0,0,0.64);
+    -moz-box-shadow: -55px 32px 47px -35px rgba(0,0,0,0.64);
+    box-shadow: -55px 32px 47px -35px rgba(0,0,0,0.64);
+    border-radius: 2px
+}
+
+/*button styling*/
+
+.ghost-button-semi-transparent {
+    top-padding: 3em;
+    margin: .8em;
+    display: inline-block;
+    height: 55px;
+    color: #F3F315;
+    opacity: .8;
+    border: 2px solid #F3F315;
+    border-radius: 0%;
+    text-align: center;
+    font-size: 22px;
+    outline: none;
+    text-decoration: none;
+    background-color: #939393;
+    transition: background-color 0.1s ease-out, border-color 0.1s ease-out;
+}
+
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+    color: grey;
+    background-color: #F3F315;
+    /* fallback */
+    background-color: #F3F315;
+    opacity: .6;
+    border-color: #fff;
+    /* fallback */
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.1s ease-in, border-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.middle-align {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.extra-top-margin {
+    margin-top: 1em;
+}
+
+
+.main-page-header{
+    padding:15px;
+    font-size: 28px;
+    color: grey;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+#bottom-left{
+    position: fixed;
+    bottom:10em;
+    left:5em;
+}
+
+.sub-page-header {
+    color: white;
+    font-weight: 900;
+    margin-bottom: 3em;
+
+}
+
+.sub-page-header h1 {
+    border-top: 3px solid #baba17;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+.margin-bottom p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.bottom-margin {
+    margin-bottom: 100px;
+    }
+
+.highlight{
+    color: #baba17;
+    border-bottom: 1px dotted #baba17;
+
+}
+
+.highlight:hover {
+    transition: .3s ease;
+    background-color: #F3F315;
+    color:grey;
+    display: inline;
+    text-decoration:none;
+}
+
+.highlight:active{
+    color: #baba17;
+    border-bottom: 1px dotted #baba17;
+}
+
+.main-page-header .highlight{
+    background-color: #F3F315;
+    color:grey;
+    display: inline;
+    border-bottom: none;
+}
+
+
+.drop-shadow{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*portfolio page tile container*/
+
+.portfolio-item h3{
+    color:#baba17;
+    font-family:'Raleway', sans-serif;
+    font-size: 22px; 
+}
+
+.portfolio-item p{
+    font-size: 16px;
+}
+
+
+
+.portfolio-item img{
+    opacity: 1;
+    border-radius:1%;
+    -webkit-filter: brightness(.95);
+    filter: brightness(.95);
+    transition: filter .5s ease-in;
+    -webkit-transition: filter .5s ease-in;
+    -moz-transition: filter .5s ease-in;
+    transition: opacity 1.5s ease-in;
+    transition: border .5s ease-in;
+    transition: box-shadow 0.1s ease-in;
+    transition: -webkit-box-shadow 0.1s ease-in;
+}
+
+.portfolio-item img:hover{
+    border: 0px;
+    opacity:.9;
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.portfolio-item{
+    -webkit-transition: background-color 1.5s ease;
+    -moz-transition: background-color 1.5s ease;
+    transition: background-color 1.5s ease;
+    padding:20px;
+    margin: 0;
+}
+.portfolio-item:hover {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; 
+    background-color: #F0F8FF;
+    -webkit-box-shadow: 0 0 5px 5px #F0F8FF;
+    box-shadow: 0 0 5px 5px #F0F8FF;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 15px solid white;
+}
+
+.outer{
+        position:relative;
+    }
+
+.inner{
+        position: absolute;
+        bottom:0;
+        left: 50px;
+    }
+
+
+/*TODO-- make flex-container work for not just first row overflow, but also 2nd and 3rd row overflow*/
+
+
+
+
+
+/*========= media queries start =============*/
+
+@media only screen and (max-width: 768px) {
+
+    .bottom-margin p{
+        font-size: 20px;
+        margin-top: 10px;
+}
+
+    .sub-page-header {
+        padding-bottom: 1em;
+    }
+
+    .sub-page-header h1{
+        font-size: 28px;
+    }
+
+    .portfolio-item{
+        -webkit-box-shadow:none;
+        box-shadow:none;
+    }
+
+   
+
+@media only screen and (max-width: 480px) {
+
+    p{
+        font-size: 20px;
+    }
+
+    #bgvid {
+        display: none;
+    }
+    .ghost-button-semi-transparent {
+        padding: .5em;
+        margin: .5em;
+    }
+    #ghost-button-nav {
+        margin-top: 1em;
+    }
+    .extra-top-margin {
+        margin-top: .5em;
+    }
+
+    .bottom-margin p{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .bottom-margin {
+        margin-bottom: 60px;
+    }
+
+    .sub-page-header {
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    
+    .sub-page-header h1{
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .portfolio-item h3{
+        font-size: 18px; 
+    }
+
+    .portfolio-item p{
+        font-size: 15px; 
+    }
+
+    .portfolio-item {
+        padding-bottom: 0;
+    }
+
+
+    #bottom-left {
+        bottom: 0;
+        left: 0;
+        top: 0;
+        height: 400px;
+    }
+
+    #bottom-left h1{
+        font-size: 16px;
+    }
+
+    #bottom-left h2{
+        font-size: 22px;
+        margin-top: 7px;
+
+    }
+
+    #bottom-left button{
+        bottom-margin:0;
+    }
+
+    #grad1{
+        box-shadow:none;
+        margin-top:0;
+    }
+
+    #contact-info{
+        margin-left: -10px;
+
+    }
+
+}
+
+
